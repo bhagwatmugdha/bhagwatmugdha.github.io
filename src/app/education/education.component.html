@@ -1,0 +1,16 @@
+<div class="card">
+    <p-timeline [value]="education" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-timelineElement>
+            <span class="custom-marker p-shadow-2" [style.backgroundColor]="timelineElement.iconBackground">
+                <i *ngIf="timelineElement.icon" [ngClass]="timelineElement.icon"></i>
+                <img *ngIf="timelineElement.image" [src]="timelineElement.image" class="iconImage">
+            </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-timelineElement>
+            <p-card [header]="timelineElement.header" [subheader]="timelineElement.date">
+                <p class="description" [innerHTML]="timelineElement.description"></p>
+                <!-- <button pButton label="Read more" class="p-button-text"></button> -->
+            </p-card>
+        </ng-template>
+    </p-timeline>
+</div>

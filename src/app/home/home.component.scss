@@ -1,0 +1,17 @@
+.profilePicture {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.title {
+    color: #3b82f6;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+::ng-deep .p-fieldset .p-fieldset-legend{
+    width: 300px !important;
+}
